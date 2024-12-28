@@ -23,10 +23,11 @@ def power_requirement(mass, delta_v, delta_t):
     
     return power
 
+        
+  
 # Example usage
-mass = 1000  # kg
-delta_v = 100  # m/s
-delta_t = 10  # s
-
-power = power_requirement(mass, delta_v, delta_t)
+Successful_mission = False
+Failed_mission = False
+while Successful_mission == False or Failed_mission == False:
+    power = power_requirement(mass, delta_v, delta_t)
 print(f"Power Requirement: {power} W")
